@@ -1,0 +1,18 @@
+.account-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 200px;
+  padding: 80px;
+}
+.account-container .first-grid .img-container {
+  width: 200px;
+  height: 200px;
+}
+.account-container .first-grid .img-container img {
+  max-width: 100%;
+  height: auto;
+}
+.account-container .second-grid {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=accounts.css.map */

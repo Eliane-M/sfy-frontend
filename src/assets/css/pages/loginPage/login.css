@@ -1,0 +1,351 @@
+body {
+  padding: 0;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.login-container,
+.signup-container,
+.forgot-password-container,
+.reset-password-container,
+.new-password-container {
+  height: 100vh;
+}
+
+.login-grid-container,
+.signup-grid-container,
+.forgot-password-grid-container,
+.reset-password-grid-container,
+.new-password-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+.login-grid-container .first-grid-container,
+.signup-grid-container .first-grid-container,
+.forgot-password-grid-container .first-grid-container,
+.reset-password-grid-container .first-grid-container,
+.new-password-grid-container .first-grid-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-grid-container .error-message,
+.signup-grid-container .error-message,
+.forgot-password-grid-container .error-message,
+.reset-password-grid-container .error-message,
+.new-password-grid-container .error-message {
+  color: tomato;
+}
+.login-grid-container .first-grid-column,
+.signup-grid-container .first-grid-column,
+.forgot-password-grid-container .first-grid-column,
+.reset-password-grid-container .first-grid-column,
+.new-password-grid-container .first-grid-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 39px;
+  padding: 20px;
+}
+.login-grid-container .first-grid-column .title-container,
+.signup-grid-container .first-grid-column .title-container,
+.forgot-password-grid-container .first-grid-column .title-container,
+.reset-password-grid-container .first-grid-column .title-container,
+.new-password-grid-container .first-grid-column .title-container {
+  display: flex;
+  flex-direction: column;
+}
+.login-grid-container .first-grid-column .title h2,
+.signup-grid-container .first-grid-column .title h2,
+.forgot-password-grid-container .first-grid-column .title h2,
+.reset-password-grid-container .first-grid-column .title h2,
+.new-password-grid-container .first-grid-column .title h2 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #1E7938;
+}
+.login-grid-container .first-grid-column .description p,
+.signup-grid-container .first-grid-column .description p,
+.forgot-password-grid-container .first-grid-column .description p,
+.reset-password-grid-container .first-grid-column .description p,
+.new-password-grid-container .first-grid-column .description p {
+  color: #676767;
+  font-size: 18px;
+}
+.login-grid-container .first-grid-column .login-form,
+.login-grid-container .first-grid-column .signup-form,
+.login-grid-container .first-grid-column .forgot-password-form,
+.login-grid-container .first-grid-column .reset-password-form,
+.login-grid-container .first-grid-column .new-password-form,
+.signup-grid-container .first-grid-column .login-form,
+.signup-grid-container .first-grid-column .signup-form,
+.signup-grid-container .first-grid-column .forgot-password-form,
+.signup-grid-container .first-grid-column .reset-password-form,
+.signup-grid-container .first-grid-column .new-password-form,
+.forgot-password-grid-container .first-grid-column .login-form,
+.forgot-password-grid-container .first-grid-column .signup-form,
+.forgot-password-grid-container .first-grid-column .forgot-password-form,
+.forgot-password-grid-container .first-grid-column .reset-password-form,
+.forgot-password-grid-container .first-grid-column .new-password-form,
+.reset-password-grid-container .first-grid-column .login-form,
+.reset-password-grid-container .first-grid-column .signup-form,
+.reset-password-grid-container .first-grid-column .forgot-password-form,
+.reset-password-grid-container .first-grid-column .reset-password-form,
+.reset-password-grid-container .first-grid-column .new-password-form,
+.new-password-grid-container .first-grid-column .login-form,
+.new-password-grid-container .first-grid-column .signup-form,
+.new-password-grid-container .first-grid-column .forgot-password-form,
+.new-password-grid-container .first-grid-column .reset-password-form,
+.new-password-grid-container .first-grid-column .new-password-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+}
+.login-grid-container .first-grid-column .login-form input,
+.login-grid-container .first-grid-column .signup-form input,
+.login-grid-container .first-grid-column .forgot-password-form input,
+.login-grid-container .first-grid-column .reset-password-form input,
+.login-grid-container .first-grid-column .new-password-form input,
+.signup-grid-container .first-grid-column .login-form input,
+.signup-grid-container .first-grid-column .signup-form input,
+.signup-grid-container .first-grid-column .forgot-password-form input,
+.signup-grid-container .first-grid-column .reset-password-form input,
+.signup-grid-container .first-grid-column .new-password-form input,
+.forgot-password-grid-container .first-grid-column .login-form input,
+.forgot-password-grid-container .first-grid-column .signup-form input,
+.forgot-password-grid-container .first-grid-column .forgot-password-form input,
+.forgot-password-grid-container .first-grid-column .reset-password-form input,
+.forgot-password-grid-container .first-grid-column .new-password-form input,
+.reset-password-grid-container .first-grid-column .login-form input,
+.reset-password-grid-container .first-grid-column .signup-form input,
+.reset-password-grid-container .first-grid-column .forgot-password-form input,
+.reset-password-grid-container .first-grid-column .reset-password-form input,
+.reset-password-grid-container .first-grid-column .new-password-form input,
+.new-password-grid-container .first-grid-column .login-form input,
+.new-password-grid-container .first-grid-column .signup-form input,
+.new-password-grid-container .first-grid-column .forgot-password-form input,
+.new-password-grid-container .first-grid-column .reset-password-form input,
+.new-password-grid-container .first-grid-column .new-password-form input {
+  max-width: 453px;
+  background-color: #f3f3f3;
+  padding: 16px 20px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+}
+.login-grid-container .first-grid-column .login-form input::-moz-placeholder, .login-grid-container .first-grid-column .signup-form input::-moz-placeholder, .login-grid-container .first-grid-column .forgot-password-form input::-moz-placeholder, .login-grid-container .first-grid-column .reset-password-form input::-moz-placeholder, .login-grid-container .first-grid-column .new-password-form input::-moz-placeholder, .signup-grid-container .first-grid-column .login-form input::-moz-placeholder, .signup-grid-container .first-grid-column .signup-form input::-moz-placeholder, .signup-grid-container .first-grid-column .forgot-password-form input::-moz-placeholder, .signup-grid-container .first-grid-column .reset-password-form input::-moz-placeholder, .signup-grid-container .first-grid-column .new-password-form input::-moz-placeholder, .forgot-password-grid-container .first-grid-column .login-form input::-moz-placeholder, .forgot-password-grid-container .first-grid-column .signup-form input::-moz-placeholder, .forgot-password-grid-container .first-grid-column .forgot-password-form input::-moz-placeholder, .forgot-password-grid-container .first-grid-column .reset-password-form input::-moz-placeholder, .forgot-password-grid-container .first-grid-column .new-password-form input::-moz-placeholder, .reset-password-grid-container .first-grid-column .login-form input::-moz-placeholder, .reset-password-grid-container .first-grid-column .signup-form input::-moz-placeholder, .reset-password-grid-container .first-grid-column .forgot-password-form input::-moz-placeholder, .reset-password-grid-container .first-grid-column .reset-password-form input::-moz-placeholder, .reset-password-grid-container .first-grid-column .new-password-form input::-moz-placeholder, .new-password-grid-container .first-grid-column .login-form input::-moz-placeholder, .new-password-grid-container .first-grid-column .signup-form input::-moz-placeholder, .new-password-grid-container .first-grid-column .forgot-password-form input::-moz-placeholder, .new-password-grid-container .first-grid-column .reset-password-form input::-moz-placeholder, .new-password-grid-container .first-grid-column .new-password-form input::-moz-placeholder {
+  color: #a9a9a9;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+}
+.login-grid-container .first-grid-column .login-form input::placeholder,
+.login-grid-container .first-grid-column .signup-form input::placeholder,
+.login-grid-container .first-grid-column .forgot-password-form input::placeholder,
+.login-grid-container .first-grid-column .reset-password-form input::placeholder,
+.login-grid-container .first-grid-column .new-password-form input::placeholder,
+.signup-grid-container .first-grid-column .login-form input::placeholder,
+.signup-grid-container .first-grid-column .signup-form input::placeholder,
+.signup-grid-container .first-grid-column .forgot-password-form input::placeholder,
+.signup-grid-container .first-grid-column .reset-password-form input::placeholder,
+.signup-grid-container .first-grid-column .new-password-form input::placeholder,
+.forgot-password-grid-container .first-grid-column .login-form input::placeholder,
+.forgot-password-grid-container .first-grid-column .signup-form input::placeholder,
+.forgot-password-grid-container .first-grid-column .forgot-password-form input::placeholder,
+.forgot-password-grid-container .first-grid-column .reset-password-form input::placeholder,
+.forgot-password-grid-container .first-grid-column .new-password-form input::placeholder,
+.reset-password-grid-container .first-grid-column .login-form input::placeholder,
+.reset-password-grid-container .first-grid-column .signup-form input::placeholder,
+.reset-password-grid-container .first-grid-column .forgot-password-form input::placeholder,
+.reset-password-grid-container .first-grid-column .reset-password-form input::placeholder,
+.reset-password-grid-container .first-grid-column .new-password-form input::placeholder,
+.new-password-grid-container .first-grid-column .login-form input::placeholder,
+.new-password-grid-container .first-grid-column .signup-form input::placeholder,
+.new-password-grid-container .first-grid-column .forgot-password-form input::placeholder,
+.new-password-grid-container .first-grid-column .reset-password-form input::placeholder,
+.new-password-grid-container .first-grid-column .new-password-form input::placeholder {
+  color: #a9a9a9;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+}
+.login-grid-container .first-grid-column .login-form .forgot-password,
+.login-grid-container .first-grid-column .signup-form .forgot-password,
+.login-grid-container .first-grid-column .forgot-password-form .forgot-password,
+.login-grid-container .first-grid-column .reset-password-form .forgot-password,
+.login-grid-container .first-grid-column .new-password-form .forgot-password,
+.signup-grid-container .first-grid-column .login-form .forgot-password,
+.signup-grid-container .first-grid-column .signup-form .forgot-password,
+.signup-grid-container .first-grid-column .forgot-password-form .forgot-password,
+.signup-grid-container .first-grid-column .reset-password-form .forgot-password,
+.signup-grid-container .first-grid-column .new-password-form .forgot-password,
+.forgot-password-grid-container .first-grid-column .login-form .forgot-password,
+.forgot-password-grid-container .first-grid-column .signup-form .forgot-password,
+.forgot-password-grid-container .first-grid-column .forgot-password-form .forgot-password,
+.forgot-password-grid-container .first-grid-column .reset-password-form .forgot-password,
+.forgot-password-grid-container .first-grid-column .new-password-form .forgot-password,
+.reset-password-grid-container .first-grid-column .login-form .forgot-password,
+.reset-password-grid-container .first-grid-column .signup-form .forgot-password,
+.reset-password-grid-container .first-grid-column .forgot-password-form .forgot-password,
+.reset-password-grid-container .first-grid-column .reset-password-form .forgot-password,
+.reset-password-grid-container .first-grid-column .new-password-form .forgot-password,
+.new-password-grid-container .first-grid-column .login-form .forgot-password,
+.new-password-grid-container .first-grid-column .signup-form .forgot-password,
+.new-password-grid-container .first-grid-column .forgot-password-form .forgot-password,
+.new-password-grid-container .first-grid-column .reset-password-form .forgot-password,
+.new-password-grid-container .first-grid-column .new-password-form .forgot-password {
+  text-align: right;
+}
+.login-grid-container .first-grid-column .login-form .forgot-password a,
+.login-grid-container .first-grid-column .signup-form .forgot-password a,
+.login-grid-container .first-grid-column .forgot-password-form .forgot-password a,
+.login-grid-container .first-grid-column .reset-password-form .forgot-password a,
+.login-grid-container .first-grid-column .new-password-form .forgot-password a,
+.signup-grid-container .first-grid-column .login-form .forgot-password a,
+.signup-grid-container .first-grid-column .signup-form .forgot-password a,
+.signup-grid-container .first-grid-column .forgot-password-form .forgot-password a,
+.signup-grid-container .first-grid-column .reset-password-form .forgot-password a,
+.signup-grid-container .first-grid-column .new-password-form .forgot-password a,
+.forgot-password-grid-container .first-grid-column .login-form .forgot-password a,
+.forgot-password-grid-container .first-grid-column .signup-form .forgot-password a,
+.forgot-password-grid-container .first-grid-column .forgot-password-form .forgot-password a,
+.forgot-password-grid-container .first-grid-column .reset-password-form .forgot-password a,
+.forgot-password-grid-container .first-grid-column .new-password-form .forgot-password a,
+.reset-password-grid-container .first-grid-column .login-form .forgot-password a,
+.reset-password-grid-container .first-grid-column .signup-form .forgot-password a,
+.reset-password-grid-container .first-grid-column .forgot-password-form .forgot-password a,
+.reset-password-grid-container .first-grid-column .reset-password-form .forgot-password a,
+.reset-password-grid-container .first-grid-column .new-password-form .forgot-password a,
+.new-password-grid-container .first-grid-column .login-form .forgot-password a,
+.new-password-grid-container .first-grid-column .signup-form .forgot-password a,
+.new-password-grid-container .first-grid-column .forgot-password-form .forgot-password a,
+.new-password-grid-container .first-grid-column .reset-password-form .forgot-password a,
+.new-password-grid-container .first-grid-column .new-password-form .forgot-password a {
+  color: #000000;
+}
+.login-grid-container .first-grid-column .login-btn a,
+.signup-grid-container .first-grid-column .login-btn a,
+.forgot-password-grid-container .first-grid-column .login-btn a,
+.reset-password-grid-container .first-grid-column .login-btn a,
+.new-password-grid-container .first-grid-column .login-btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #579B55;
+  border-radius: 12px;
+  padding: 16px 20px;
+  max-width: 453px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.login-grid-container .first-grid-column .login-btn .btn-disabled,
+.signup-grid-container .first-grid-column .login-btn .btn-disabled,
+.forgot-password-grid-container .first-grid-column .login-btn .btn-disabled,
+.reset-password-grid-container .first-grid-column .login-btn .btn-disabled,
+.new-password-grid-container .first-grid-column .login-btn .btn-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+.login-grid-container .first-grid-column .signup-btn a,
+.signup-grid-container .first-grid-column .signup-btn a,
+.forgot-password-grid-container .first-grid-column .signup-btn a,
+.reset-password-grid-container .first-grid-column .signup-btn a,
+.new-password-grid-container .first-grid-column .signup-btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #61AB60;
+  background-color: #f0f4ff;
+  border-radius: 12px;
+  padding: 16px 20px;
+  width: 453px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.login-grid-container .second-grid-column,
+.signup-grid-container .second-grid-column,
+.forgot-password-grid-container .second-grid-column,
+.reset-password-grid-container .second-grid-column,
+.new-password-grid-container .second-grid-column {
+  display: flex;
+  background-color: #4BA949;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  padding: 20px;
+}
+.login-grid-container .second-grid-column .img-container,
+.signup-grid-container .second-grid-column .img-container,
+.forgot-password-grid-container .second-grid-column .img-container,
+.reset-password-grid-container .second-grid-column .img-container,
+.new-password-grid-container .second-grid-column .img-container {
+  height: 70vh;
+}
+.login-grid-container .second-grid-column .img-container img,
+.signup-grid-container .second-grid-column .img-container img,
+.forgot-password-grid-container .second-grid-column .img-container img,
+.reset-password-grid-container .second-grid-column .img-container img,
+.new-password-grid-container .second-grid-column .img-container img {
+  max-width: 100%;
+  max-height: 70vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.login-grid-container .second-grid-column .description,
+.signup-grid-container .second-grid-column .description,
+.forgot-password-grid-container .second-grid-column .description,
+.reset-password-grid-container .second-grid-column .description,
+.new-password-grid-container .second-grid-column .description {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.login-grid-container .second-grid-column .description h2,
+.signup-grid-container .second-grid-column .description h2,
+.forgot-password-grid-container .second-grid-column .description h2,
+.reset-password-grid-container .second-grid-column .description h2,
+.new-password-grid-container .second-grid-column .description h2 {
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  width: 342px;
+}
+.login-grid-container .second-grid-column .description p,
+.signup-grid-container .second-grid-column .description p,
+.forgot-password-grid-container .second-grid-column .description p,
+.reset-password-grid-container .second-grid-column .description p,
+.new-password-grid-container .second-grid-column .description p {
+  color: #c3c3c3;
+  font-size: 17px;
+  text-align: center;
+  width: 391px;
+}
+
+@media screen and (max-width: 992px) {
+  .login-grid-container,
+  .signup-grid-container,
+  .forgot-password-grid-container,
+  .reset-password-grid-container,
+  .new-password-grid-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .login-grid-container .second-grid-column-container,
+  .signup-grid-container .second-grid-column-container,
+  .forgot-password-grid-container .second-grid-column-container,
+  .reset-password-grid-container .second-grid-column-container,
+  .new-password-grid-container .second-grid-column-container {
+    display: none;
+  }
+}/*# sourceMappingURL=login.css.map */

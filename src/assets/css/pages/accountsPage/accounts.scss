@@ -1,0 +1,26 @@
+.account-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 200px;
+    padding: 80px;
+
+    .first-grid{
+        
+
+        .img-container{
+            width: 200px;
+            height: 200px;
+
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .second-grid{
+        display: flex;
+        flex-direction: column;
+        
+    }
+}

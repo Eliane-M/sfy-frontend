@@ -1,0 +1,120 @@
+body {
+  padding: 0;
+}
+
+.Services {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.Services h1 {
+  color: #61AB60;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Services .farming {
+  display: flex;
+  justify-content: space-around;
+}
+.Services .farming .img {
+  min-width: 300px;
+}
+.Services .farming .farming-text {
+  max-width: 500px;
+  max-height: 700px;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.Services .farming .farming-text .title {
+  display: flex;
+  color: #61AB60;
+}
+.Services .farming .button {
+  margin-top: 3rem;
+  max-width: 380px;
+}
+.Services .farming .button .jobs {
+  cursor: pointer;
+  padding: 20px 60px;
+  color: #fff;
+  align-items: center;
+  background-color: #579B55;
+  border-radius: 12px;
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+.Services .farming .button .jobs a {
+  text-decoration: none;
+  color: #fff;
+}
+.Services .livestock {
+  display: flex;
+  justify-content: space-around;
+}
+.Services .livestock .livestock-text {
+  max-width: 500px;
+  max-height: 700px;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.Services .livestock .livestock-text .title {
+  display: flex;
+  color: #61AB60;
+}
+.Services .livestock .livestock-text .button {
+  margin-top: 3rem;
+  max-width: 380px;
+}
+.Services .livestock .livestock-text .button .jobs {
+  cursor: pointer;
+  padding: 20px 60px;
+  color: #fff;
+  align-items: center;
+  background-color: #579B55;
+  border-radius: 12px;
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+.Services .livestock .livestock-text .button .jobs a {
+  text-decoration: none;
+  color: #fff;
+}
+.Services .tourism {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+.Services .tourism .tourism-text {
+  max-width: 500px;
+  max-height: 700px;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.Services .tourism .tourism-text .title {
+  display: flex;
+  color: #61AB60;
+}
+.Services .tourism .tourism-text .button {
+  margin-top: 3rem;
+  max-width: 400px;
+}
+.Services .tourism .tourism-text .button .jobs {
+  cursor: pointer;
+  padding: 20px 60px;
+  color: #fff;
+  align-items: center;
+  background-color: #579B55;
+  border-radius: 12px;
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+.Services .tourism .tourism-text .button .jobs a {
+  text-decoration: none;
+  color: #fff;
+}/*# sourceMappingURL=services.css.map */
