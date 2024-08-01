@@ -29,7 +29,7 @@ const Homepage = () => {
             <div className="hero-section">
                 <div className="firstgrid">
                     <h1>Get employed and grow your future</h1>
-                    <p>Welcome to Agriculture For Youth;
+                    <p>Welcome to Agriculture For Youth,
                         Your gateway to excting opportunitiesin the agriculture industry.</p>
                 </div>
                 <div className="secondgrid">

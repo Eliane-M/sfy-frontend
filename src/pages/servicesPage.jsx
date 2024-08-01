@@ -7,9 +7,11 @@ import Agro_tourism from '../images/Agro_tourism.png';
 import '../assets/css/pages/servicesPage/services.css';
 import { Link } from 'react-router-dom';
 import { FaAngleRight } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 
 
 const ServicesPage = () => {
+    const navigate = useNavigate();
     return (
         <>
             <NavBar />
@@ -21,12 +23,7 @@ const ServicesPage = () => {
                         <h3 className='title'>FARMING</h3>
                         <p>Farming services encompass a range of activities vital to agricultural productivity and sustainability. Farmers benefit from extension services that provide crucial knowledge on modern
                             farming techniques, crop management, and pest control. These services are often facilitated by agricultural cooperatives and government initiatives aimed at improving yields and incomes for small-scale farmers. Access to agricultural inputs such as seeds, fertilizers, and tools is also facilitated, ensuring farmers have the resources needed to cultivate their land effectively.</p>
-                        <div className="button">
-                            <div className='jobs'>
-                                <Link to=''>Jobs in Farming</Link>
-                                <FaAngleRight size={30} />
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
                 <div className='livestock'>
@@ -34,12 +31,6 @@ const ServicesPage = () => {
                         <h3 className='title'>LIVESTOCK</h3>
                         <p>Livestock farming in Rwanda is integral to the country's agricultural sector, providing livelihoods for rural communities and contributing to food security. Small-scale farmers predominantly rear cattle, goats, sheep, and poultry, with an emphasis on 
                             sustainable practices and improved breeds. Livestock farming plays a crucial role in the economy by supplying milk, meat, and other animal products to local markets and supporting household incomes.</p>
-                        <div className="button">
-                            <div className='jobs'>
-                                <Link to=''>Jobs in Livestock</Link>
-                                <FaAngleRight size={30} />
-                            </div>
-                        </div>
                     </div>
                     <img src={Livestock} alt='' />
                 </div>
@@ -50,14 +41,15 @@ const ServicesPage = () => {
                         <p>Agro-tourism in Rwanda offers visitors a unique opportunity to explore the country's rich agricultural heritage while supporting local communities. Tourists can engage in 
                             activities such as farm visits, where they learn about traditional and modern farming techniques firsthand from local farmers. This immersive experience includes participating in activities like harvesting, coffee roasting, or banana beer brewing, depending 
                             on the region. Agro-tourism not only promotes cultural exchange but also contributes to the local economy by generating income for farmers and fostering sustainable development in rural areas.</p>
-                        <div className="button">
+                    </div>
+                </div>
+
+                <div className="jobs-button" onClick={() => navigate('/jobs')}>
                             <div className='jobs'>
-                                <Link to=''>Jobs in Agro-Tourism</Link>
+                                <Link to=''>Job Listing</Link>
                                 <FaAngleRight size={30} />
                             </div>
                         </div>
-                    </div>
-                </div>
             </div>
             <Footer />
         </>

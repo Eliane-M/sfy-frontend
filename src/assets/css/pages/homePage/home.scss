@@ -119,8 +119,7 @@ nav{
             }
 
             p{
-                color: #676767;
-                font-size: 24px;
+                font-size: 20px;
             }
         }
 
@@ -221,4 +220,83 @@ nav{
             }
         }
     }
+
+    .choose-us{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 80px;
+
+        h2{
+            color: #1E7938;
+            font-size: 24px;
+            padding-bottom: 20px;
+        }
+
+        .choose-div{
+            display: flex;
+            gap: 30px;
+            justify-content: space-between;
+            
+            .reason-1{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #408a3d7c;
+                border-radius: 16px;
+                padding: 1rem;
+
+                h3{
+                    color: #1E7938;
+                    font-size: 16px;
+                }
+            }
+
+            .reason-2{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #408a3d7c;
+                border-radius: 16px;
+                padding: 1rem;
+
+                h3{
+                    color: #1E7938;
+                    font-size: 16px;
+                }
+            }
+
+            .reason-3{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #408a3d7c;
+                border-radius: 16px;
+                padding: 1rem;
+
+                h3{
+                    color: #1E7938;
+                    font-size: 16px;
+                }
+
+                p{
+                    // color: beige;
+                    justify-items: center;
+                }
+            }
+        }
+    }
+}
+
+.signup-button{
+    
+        text-decoration: none;
+        color: #fff;
+        padding: 15px 30px;
+        background-color: #284E27;
+        border-radius: 12px;
+        margin-right: 20px;
+        
+
+    
 }

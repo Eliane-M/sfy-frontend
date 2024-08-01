@@ -18,7 +18,8 @@ const NavBar = () => {
     }
 
     const handleLogout = () => {
-        localStorage.removeItem('token');
+        localStorage.clear();
+        window.location.href = '/'
     }
 
     return (
@@ -31,14 +32,14 @@ const NavBar = () => {
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/services">Services</Link></li>
                 <li><Link to="/courses">Courses</Link></li>
-                <li><a href="#">Job Listing</a></li>
-                {!isLoggedIn() ? (
+                <li><Link to="/jobs">Job Listing</Link></li>
+                
+            </ul>
+            {!isLoggedIn() ? (
                     <>
-                        <li><Link to="/login">Log In</Link></li>
-                        <li><Link to="/signup">Sign Up</Link></li>
+                        <Link to="/signup" className="signup-button">Sign Up</Link>
                     </>
                 ) : null}
-            </ul>
             {isLoggedIn() && (
                 <div className="account">
                     <img src={account} alt="Account" />
@@ -48,8 +49,7 @@ const NavBar = () => {
                         </button>
                         {showDropdown && (
                             <div className="dropdown-content" style={{ background: '#fff' }}>
-                                <button onClick={handleLogout}>Log Out</button>
-                                <Link to="/switch-account">Switch Account</Link>
+                                <a onClick={handleLogout} style={{cursor: 'pointer'}}>Log Out</a>
                                 <Link to="/account">View Profile</Link>
                             </div>
                         )}

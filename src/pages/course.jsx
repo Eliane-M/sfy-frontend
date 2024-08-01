@@ -64,8 +64,8 @@ const CoursePage = () => {
                 <div className="second-row">
                     <h4>Progress</h4>
                     <div className="progress-bar">
-    <div className="progress-bar-inner" style={{ width: '0%' }}></div>
-</div>
+                    <div className="progress-bar-inner" style={{ width: '0%' }}></div>
+                </div>
                     <div className="button">
                     <a href="">Start Learning <FaArrowRight/></a>
                     </div>
@@ -83,21 +83,21 @@ const CoursePage = () => {
                             <div className="list-item">
                             <img src={check} alt="" />
                             <p>Crop rotation and diversification</p>
-    </div>
-                            <div className="list-item">
-                                <img src={check} alt="" />
-                                <p>Irrigation and drainage</p>
-                            </div>
+                        </div>
+                        <div className="list-item">
+                            <img src={check} alt="" />
+                            <p>Irrigation and drainage</p>
+                        </div>
 
-                            <div className="list-item">
-                                <img src={check} alt="" />
-                                <p>Farm Management</p>
-                            </div>
+                        <div className="list-item">
+                            <img src={check} alt="" />
+                            <p>Farm Management</p>
+                        </div>
 
-                            <div className="list-item">
-                                <img src={check} alt="" />
-                                <p>Market analysis and negotiation</p>
-                            </div>
+                        <div className="list-item">
+                            <img src={check} alt="" />
+                            <p>Market analysis and negotiation</p>
+                        </div>
     
                     </div>
                     

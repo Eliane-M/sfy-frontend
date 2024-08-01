@@ -1,0 +1,32 @@
+body {
+  padding: 0;
+}
+
+.courses-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.courses-container .job-heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2em;
+  gap: 20em;
+}
+.courses-container .job-heading h1 {
+  color: #61AB60;
+  font-size: 2.5em;
+}
+.courses-container .job-heading .new-job-button {
+  background-color: rgba(87, 155, 85, 0.7058823529);
+  color: white;
+  border-radius: 20px;
+  padding: 1em 2em;
+  cursor: pointer;
+  text-decoration: none;
+}
+.courses-container .courses-cards {
+  gap: 4em;
+}/*# sourceMappingURL=jobs.css.map */

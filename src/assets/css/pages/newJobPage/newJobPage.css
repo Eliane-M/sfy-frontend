@@ -1,0 +1,52 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.newjob-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.newjob-card-container h2 {
+  font-size: 1.5em;
+  color: #1E7938;
+  margin-bottom: 20px;
+}
+.newjob-card-container .img-container {
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.478);
+}
+.newjob-card-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.478);
+  gap: 1.5em;
+}
+.newjob-card-container form input {
+  width: 65%;
+  height: 2.5em;
+}
+.newjob-card-container form textarea {
+  width: 65%;
+  height: 4em;
+}
+.newjob-card-container form button {
+  width: 80%;
+  height: 3em;
+  background-color: rgba(30, 121, 56, 0.7764705882);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}/*# sourceMappingURL=newJobPage.css.map */

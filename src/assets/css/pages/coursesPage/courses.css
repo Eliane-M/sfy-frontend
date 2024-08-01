@@ -10,8 +10,8 @@
 .course-card .img-container {
   width: 300px;
   height: 200px;
-  background-color: #1E7938;
   border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.478);
 }
 .course-card .hrs-level {
   display: flex;
@@ -42,6 +42,7 @@
   gap: 20px;
   padding-inline: 80px;
   padding-top: 20px;
+  padding-bottom: 30px;
 }
 .course-details-container .names {
   display: flex;
@@ -93,10 +94,12 @@
   height: 20px;
   background-color: #f0f0f0;
   border-radius: 5px;
+  padding-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.671);
 }
 .course-details-container .description .second-row .progress-bar-inner {
   height: 100%;
-  width: 0%;
+  width: 70%;
   background-color: #1E7938;
   border-radius: 5px;
   transition: width 0.3s ease;

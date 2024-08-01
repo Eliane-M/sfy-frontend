@@ -1,7 +1,7 @@
 import React from "react";
 import { SecondColumn } from "../secondColumn";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState} from "react";
 import axios from "axios";
 import BASE_URL from "../../config";
 
@@ -14,6 +14,7 @@ export const Login = () => {
   const [generalError, setGeneralError] = useState('');
   const [fullName, setFullName] = useState("");
   const [loading, setLoading] = useState(false);
+  
 
   
   const handleBlur = (field) => {
@@ -70,13 +71,11 @@ export const Login = () => {
         localStorage.setItem('firstName', user.first_name);
         localStorage.setItem('lastName', user.last_name)
         localStorage.setItem('role', role)
+        localStorage.setItem('email', email)
+        
 
 
-        if(role === 'staff'){
-          navigate('/adminpanel');
-        } else{
-          navigate("/");
-        }
+        navigate('/')
         
       } else {
         setGeneralError('Login failed. Please try again')

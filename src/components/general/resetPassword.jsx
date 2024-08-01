@@ -5,12 +5,12 @@ import { useState } from "react";
 
 export const ResetPassword = () => {
     const navigate = useNavigate();
-    const [digits, setDigits] = useState('');
+    const [text, setDigits] = useState('');
 
     const handleReset = (e) => {
         e.preventDefault();
-        console.log('OTP: ', digits);
-        navigate('/newpassword')
+        console.log('OTP: ', text);
+        navigate('/login')
     }
     return(
         <>
@@ -27,7 +27,9 @@ export const ResetPassword = () => {
                 </div>
                 
                 <form className="reset-password-form">
-                    <input type="number" placeholder="Enter Code" value={digits} onChange={(e) => setDigits(e.target.value)}/>
+                    <input type="text" placeholder="Enter Code" value={text} onChange={(e) => setDigits(e.target.value)}/>
+                    <input type="text" placeholder="Enter New Password" value={text} onChange={(e) => setDigits(e.target.value)}/>
+                    <input type="text" placeholder="Confirm New Password" value={text} onChange={(e) => setDigits(e.target.value)}/>
                     
                 </form>
                 <div className="login-btn">

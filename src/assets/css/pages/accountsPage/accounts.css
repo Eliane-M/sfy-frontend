@@ -4,15 +4,46 @@
   gap: 200px;
   padding: 80px;
 }
+.account-container .first-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 .account-container .first-grid .img-container {
   width: 200px;
   height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .account-container .first-grid .img-container img {
   max-width: 100%;
   height: auto;
 }
+.account-container .first-grid .change-picture-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #6cb76e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
 .account-container .second-grid {
   display: flex;
   flex-direction: column;
+}
+.account-container .second-grid .reset-password-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15em;
+  height: 4em;
+  border-radius: 20px;
+  background-color: #6cb76e;
+  text-decoration: none;
+  color: white;
 }/*# sourceMappingURL=accounts.css.map */

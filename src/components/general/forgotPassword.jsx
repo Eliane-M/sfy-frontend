@@ -14,7 +14,7 @@ export const ForgotPassword = () => {
         e.preventDefault();
         setError('');
         try{
-            const res = await axios.post(`${BASE_URL}/api/auth/reset/`, {email});
+            const res = await axios.post(`${BASE_URL}/api/auth/password_reset/`, {email});
 
             navigate('/resetpassword');
 

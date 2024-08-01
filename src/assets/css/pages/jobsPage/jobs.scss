@@ -1,0 +1,42 @@
+@import '../../variables/variables.scss';
+
+body{
+    padding: 0;
+}
+
+.courses-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .job-heading{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        // font-size: 1.5em;
+        margin-bottom: 2em;
+        gap: 20em;
+
+        h1{
+            color: #61AB60;
+            font-size: 2.5em;
+        }
+
+        .new-job-button{
+            background-color: #579b55b4;
+            color: white;
+            border-radius: 20px;
+            padding: 1em 2em;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    }
+
+    .courses-cards{
+        // display: grid;
+        // grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 4em;
+        // padding: 1em;
+    }
+}

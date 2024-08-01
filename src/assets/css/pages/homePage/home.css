@@ -103,8 +103,7 @@ nav .account .dropdown .dropdown-content a {
   font-size: 40px;
 }
 .homepage .hero-section .firstgrid p {
-  color: #676767;
-  font-size: 24px;
+  font-size: 20px;
 }
 .homepage .hero-section .secondgrid {
   width: 50%;
@@ -178,4 +177,68 @@ nav .account .dropdown .dropdown-content a {
 .homepage .who-we-are .who-we-are-div img {
   width: 50%;
   border-radius: 12px;
+}
+.homepage .choose-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+}
+.homepage .choose-us h2 {
+  color: #1E7938;
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+.homepage .choose-us .choose-div {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+.homepage .choose-us .choose-div .reason-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(64, 138, 61, 0.4862745098);
+  border-radius: 16px;
+  padding: 1rem;
+}
+.homepage .choose-us .choose-div .reason-1 h3 {
+  color: #1E7938;
+  font-size: 16px;
+}
+.homepage .choose-us .choose-div .reason-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(64, 138, 61, 0.4862745098);
+  border-radius: 16px;
+  padding: 1rem;
+}
+.homepage .choose-us .choose-div .reason-2 h3 {
+  color: #1E7938;
+  font-size: 16px;
+}
+.homepage .choose-us .choose-div .reason-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(64, 138, 61, 0.4862745098);
+  border-radius: 16px;
+  padding: 1rem;
+}
+.homepage .choose-us .choose-div .reason-3 h3 {
+  color: #1E7938;
+  font-size: 16px;
+}
+.homepage .choose-us .choose-div .reason-3 p {
+  justify-items: center;
+}
+
+.signup-button {
+  text-decoration: none;
+  color: #fff;
+  padding: 15px 30px;
+  background-color: #284E27;
+  border-radius: 12px;
+  margin-right: 20px;
 }/*# sourceMappingURL=home.css.map */

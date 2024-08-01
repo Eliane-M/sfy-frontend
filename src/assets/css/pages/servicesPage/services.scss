@@ -150,4 +150,31 @@ body{
             }
         }
     }
+
+    
+}
+
+.jobs-button{
+    margin-bottom: 3rem;
+    max-width: 380px;
+    margin-left: 40px;
+
+    .jobs{
+        cursor: pointer;
+        padding: 20px 60px;
+        color: #fff;
+        align-items: center;
+        background-color: #579B55;
+        border-radius: 12px;
+        display: flex;
+        gap: 80px;
+        align-items: center;
+
+        a{
+            text-decoration: none;
+            color: #fff;
+            
+        }
+
+    }
 }

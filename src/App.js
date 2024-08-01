@@ -10,6 +10,9 @@ import Account from './pages/accountPage';
 import Courses from './pages/coursesPage';
 import CoursePage from './pages/course';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import JobsPage from './pages/jobsPage';
+import SkillsAssessmentPage from './pages/skillsAssessmentPage';
+import NewJobPage from './pages/newJobPage';
 
 function App() {
   return (
@@ -25,6 +28,9 @@ function App() {
         <Route path='/account' element={<Account/>} />
         <Route path='/courses' element={<Courses/>} />
         <Route path='/courses/:id' element={<CoursePage/>} />
+        <Route path='/jobs' element={<JobsPage />} />
+        <Route path='/skillsAssessment' element={<SkillsAssessmentPage />} />
+        <Route path='/jobs/new-job' element={<NewJobPage />} />
       </Routes>
     </Router>
   );
