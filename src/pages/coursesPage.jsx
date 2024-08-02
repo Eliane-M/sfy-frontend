@@ -46,6 +46,7 @@ const Courses = () => {
         const fetchCourses = async () => {
             try {
                 const response = await axios.get(`${BASE_URL}/api/dashboard/educational_resources/`);
+                console.log('API Response:', response.data);
                 setCourses(response.data.educational_resources);
                 console.log(response.data);
             } catch (error) {
@@ -66,11 +67,11 @@ const isEmployer = () =>{
             <div className="courses-container">
                 <div className="courses-title">
                     <h1>Courses</h1>
-                    {isEmployer() && <Link to="/new_course" className="new-course-button">Add New Course</Link>}
+                    {isEmployer() && <Link to="/courses/new-course" className="new-course-button">Add New Course</Link>}
                 </div>
                 <div className="courses-cards">
                     {courses.map((course) => (
-                        <CourseCard key={course.id} course={course.name} />
+                        <CourseCard key={course.id} course={course} />
                     ))}
                 </div>
             </div>
