@@ -19,7 +19,7 @@ const CoursePage = () => {
                 </div>
                 <div className="title">
                 <h3>COURSE</h3>
-                <h4>Name of course</h4>
+                <h4>Farming</h4>
                 </div>
                 
             </div>
@@ -27,9 +27,8 @@ const CoursePage = () => {
             <div className="description">
                 <div className="first-row">
                     <h4>About the course</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed 
-                        vel purus auctor, consectetur neque vitae, bibendum nisi. Sed vel purus 
-                        auctor, consectetur neque vitae, bibendum nisi. Sed vel purus auctor, consectetur neque vitae, bibendum nisi.</p>
+                    <p>In this course, we will look at the different farmingtechniques, the best techniques to use, 
+                        and when to use which techniques</p>
 
                     <div className="skills-facts-container">
                     <div className="facts">

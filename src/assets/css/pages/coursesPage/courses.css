@@ -7,11 +7,8 @@
   font-size: 24px;
   margin-bottom: 16px;
 }
-.course-card .img-container {
-  width: 300px;
-  height: 200px;
+.course-card .img-container img {
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.478);
 }
 .course-card .hrs-level {
   display: flex;
