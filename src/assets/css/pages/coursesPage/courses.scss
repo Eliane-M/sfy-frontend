@@ -39,7 +39,29 @@
 }
 
 .courses-container{
-    padding-inline: 80px;
+    margin-bottom: 4em;
+
+    .courses-title{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 2em 2em;
+        justify-content: space-between;
+        width: 60rem;
+
+        h1{
+            color: #1E7938;
+        }
+    
+        .new-course-button{
+            background-color: #579b55b4;
+            color: white;
+            border-radius: 20px;
+            padding: 1em 2em;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    }
     
 
 }
@@ -88,6 +110,7 @@
 
         .first-row{
             max-width: 50%;
+            // gap: 20px;
 
             .skills-facts-container{
                 display: flex;
@@ -102,6 +125,38 @@
                 display: flex;
                 gap: 10px;
             }
+
+            .skill-assessment-card{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 1rem;
+                margin-top: 8em;
+                background-color: #408a3d7c;
+                border-radius: 20px;
+                // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.671);
+
+                h2{
+                    color: #1E7938;
+                }
+
+                .button{
+                    background-color: #1E7938;
+                    color: #FFFFFF;
+                    padding: 10px 20px;
+                    width: 12em;
+                    border-radius: 10px;
+                    cursor: pointer;
+
+                    a{
+                        color: white;
+                        text-decoration: none;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+                }
+            }
             
         }
 
@@ -112,9 +167,9 @@
                 width: 100%;
                 height: 20px; 
                 background-color: #f0f0f0;
-                border-radius: 5px;
-                padding-bottom: 10px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.671);
+                border-radius: 10px;
+                margin-bottom: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.271);
             }
             
             .progress-bar-inner {

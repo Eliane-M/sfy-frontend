@@ -37,9 +37,6 @@ const JobsPage = () => {
                 <div className="job-heading">
                     <h1>Jobs Available</h1>
                     {isEmployer() && <Link to="/jobs/new-job" className="new-job-button">Add New Job</Link>}
-                    
-                        
-                    
                 </div>
                 <div className="courses-cards">
           {jobs && jobs.map((job) => (

@@ -102,7 +102,7 @@ nav{
     padding: 80px;
 
     .hero-section{
-        min-height: 70vh;
+        height: 65vh;
         display: flex;
         gap: 40px;
 
@@ -125,6 +125,7 @@ nav{
 
         .secondgrid{
             width: 50%;
+            padding-left: 4em;
             img{
                 max-width: 80%;
             }
@@ -136,7 +137,7 @@ nav{
         display: flex;
         align-items: center;
         flex-direction: column;
-        margin-top: 20px;
+        // margin-top: 10px;
 
         .button{
             margin-top: 3rem;

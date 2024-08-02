@@ -87,7 +87,7 @@ nav .account .dropdown .dropdown-content a {
   padding: 80px;
 }
 .homepage .hero-section {
-  min-height: 70vh;
+  height: 65vh;
   display: flex;
   gap: 40px;
   max-width: -moz-max-content;
@@ -107,6 +107,7 @@ nav .account .dropdown .dropdown-content a {
 }
 .homepage .hero-section .secondgrid {
   width: 50%;
+  padding-left: 4em;
 }
 .homepage .hero-section .secondgrid img {
   max-width: 80%;
@@ -115,7 +116,6 @@ nav .account .dropdown .dropdown-content a {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 20px;
 }
 .homepage .services-container .button {
   margin-top: 3rem;

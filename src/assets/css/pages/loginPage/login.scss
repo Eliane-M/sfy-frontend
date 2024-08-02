@@ -197,3 +197,27 @@ html {
   
 
 }
+
+.password-input-container{
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  input{
+    width: 100%;
+    padding-right: 40px;
+
+
+  }
+
+  .password-toggle-btn{
+    position: absolute;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #676767;
+    
+    
+  }
+}

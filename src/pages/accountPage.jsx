@@ -26,7 +26,7 @@ const Account = () => {
         <>
         <NavBar/>
         <div className="account-container">
-            <div className="first-grid">
+            {/* <div className="first-grid">
                 <h3>Profile picture</h3>
                 <div className="img-container">
                     <img src={account} alt="profile" />
@@ -41,7 +41,7 @@ const Account = () => {
                 <label htmlFor="fileInput" className="change-picture-button">
                     Change Picture
                 </label>
-            </div>
+            </div> */}
 
             <div className="second-grid">
                 <h3>Personal Information</h3>

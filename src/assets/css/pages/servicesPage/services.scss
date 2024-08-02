@@ -157,7 +157,7 @@ body{
 .jobs-button{
     margin-bottom: 3rem;
     max-width: 380px;
-    margin-left: 40px;
+    margin-left: 35%;
 
     .jobs{
         cursor: pointer;
@@ -167,7 +167,7 @@ body{
         background-color: #579B55;
         border-radius: 12px;
         display: flex;
-        gap: 80px;
+        justify-content: space-between;
         align-items: center;
 
         a{

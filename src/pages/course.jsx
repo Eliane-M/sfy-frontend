@@ -59,12 +59,20 @@ const CoursePage = () => {
                         </div>
                         
                     </div>
+                    <div className="skill-assessment-card">
+                        <h2>Skill Assessment</h2>
+                        <p>After reading through the course, we are going to test your knowledge. 
+                            Expect constructive feedback that will help you grow in your field.</p>
+                        <div className="button">
+                            <a href="/skillsAssessment">Start Asessment <FaArrowRight/></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="second-row">
                     <h4>Progress</h4>
                     <div className="progress-bar">
-                    <div className="progress-bar-inner" style={{ width: '0%' }}></div>
+                    <div className="progress-bar-inner" style={{ width: '3%' }}></div>
                 </div>
                     <div className="button">
                     <a href="">Start Learning <FaArrowRight/></a>

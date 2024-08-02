@@ -5,6 +5,7 @@ import { FaClock, FaBook } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import BASE_URL from "../config";
+import { Link } from "react-router-dom";
 
 const CourseCard = ({ course }) => {
     const navigate = useNavigate();
@@ -55,11 +56,18 @@ const Courses = () => {
         fetchCourses();
     }, []);
 
+const isEmployer = () =>{
+    return localStorage.getItem('role') === 'staff';
+}
+
     return (
         <>
             <NavBar />
             <div className="courses-container">
-                <h1>Courses</h1>
+                <div className="courses-title">
+                    <h1>Courses</h1>
+                    {isEmployer() && <Link to="/new_course" className="new-course-button">Add New Course</Link>}
+                </div>
                 <div className="courses-cards">
                     {courses.map((course) => (
                         <CourseCard key={course.id} course={course.name} />

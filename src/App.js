@@ -13,6 +13,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import JobsPage from './pages/jobsPage';
 import SkillsAssessmentPage from './pages/skillsAssessmentPage';
 import NewJobPage from './pages/newJobPage';
+import NewCoursePage from './pages/newCoursePage';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path='/jobs' element={<JobsPage />} />
         <Route path='/skillsAssessment' element={<SkillsAssessmentPage />} />
         <Route path='/jobs/new-job' element={<NewJobPage />} />
+        <Route path='/courses/new-course' element={<NewCoursePage />} />
       </Routes>
     </Router>
   );

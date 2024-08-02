@@ -33,7 +33,26 @@
 }
 
 .courses-container {
-  padding-inline: 80px;
+  margin-bottom: 4em;
+}
+.courses-container .courses-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 2em 2em;
+  justify-content: space-between;
+  width: 60rem;
+}
+.courses-container .courses-title h1 {
+  color: #1E7938;
+}
+.courses-container .courses-title .new-course-button {
+  background-color: rgba(87, 155, 85, 0.7058823529);
+  color: white;
+  border-radius: 20px;
+  padding: 1em 2em;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .course-details-container {
@@ -86,6 +105,33 @@
   display: flex;
   gap: 10px;
 }
+.course-details-container .description .first-row .skill-assessment-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 8em;
+  background-color: rgba(64, 138, 61, 0.4862745098);
+  border-radius: 20px;
+}
+.course-details-container .description .first-row .skill-assessment-card h2 {
+  color: #1E7938;
+}
+.course-details-container .description .first-row .skill-assessment-card .button {
+  background-color: #1E7938;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  width: 12em;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.course-details-container .description .first-row .skill-assessment-card .button a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .course-details-container .description .second-row {
   max-width: 50%;
 }
@@ -93,9 +139,9 @@
   width: 100%;
   height: 20px;
   background-color: #f0f0f0;
-  border-radius: 5px;
-  padding-bottom: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.671);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.271);
 }
 .course-details-container .description .second-row .progress-bar-inner {
   height: 100%;
