@@ -12,7 +12,6 @@ Agriculture For Youth aims to empower the Rwandan youth by providing a platform 
 - Job listings
 - Job application
 - Profile management
-- Search functionality
 
 ## Getting Started
 To get started with the website, simply visit the [Live website](https://sfy-frontend-app.vercel.app/courses)
