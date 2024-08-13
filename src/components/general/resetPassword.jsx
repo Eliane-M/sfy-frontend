@@ -92,8 +92,8 @@ export const ResetPassword = () => {
 
         try {
         const res = await axios.post(`${BASE_URL}/api/auth/reset_confirm/`, {
-            code: OTP,
-            email,
+            token: OTP,
+            uid: email,
             new_password: formData.newPassword,
         });
 
