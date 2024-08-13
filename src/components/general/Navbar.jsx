@@ -42,7 +42,7 @@ const NavBar = () => {
                 ) : null}
             {isLoggedIn() && (
                 <div className="account">
-                    <img src={account} alt="Account" />
+                    {/* <img src={account} alt="Account" /> */}
                     <div className="dropdown">
                         <button className="dropdown-button" onClick={handleDropdown}>
                             <FaAngleDown size={20} />
