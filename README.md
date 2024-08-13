@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Agriculture For Youth - README
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Agriculture For Youth project! This website is designed to help Rwandan youth find job opportunities in the agriculture sector. The frontend is built with React.js.
 
-## Available Scripts
+## Introduction
 
-In the project directory, you can run:
+Agriculture For Youth aims to empower the Rwandan youth by providing a platform where they can easily find and apply for jobs in the agricultural sector. This project is a step towards reducing youth unemployment by connecting them with various agricultural opportunities.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- User registration and login
+- Job listings
+- Job application
+- Profile management
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
+To get started with the website, simply visit the [Live website](https://sfy-frontend-app.vercel.app/courses)
 
-### `npm test`
+In this repository: 
+- public/ contains the HTML file and static assets.
+- src/ contains the components, assets, images folder, and the general website images.
+- assets/ contains the styles of the pages with specific colors and layouts.
+- components/ contains the reusable page sections, like the navbar, to prevent redundancy.
+- pages/contains the page components corresponding to different routes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Contributing
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+We welcome contributions :) To contribute:
+1) Fork the repository:
+   - Navigate to the repository
+   - Click the "Fork" button in the top right corner
+2) Clone your fork in your IDE (I recommend using Visual Studio Code):
+   - Open your VS Code
+   - Open a new terminal
+   - Run
+     `git clone https://github.com/Eliane-M/sfy-frontend.git`
+   - Navigate to the cloned directory by running
+     ### cd agriculture-for-youth
+3) Create a new branch:
+   - Run
+     `git checkout -b suggestions_branch`
+4) Make your changes:
+   - Implement the changes you want to make to the file or any bug fix.
+   - Ensure your code follows the project's coding standards and passes all tests.
+5) Commit your changes:
+   - Run the command to stage your changes
+     `git add .`
+   - Then run the command to commit the changes
+     `git commit -m 'Added some features'`
+   - Push the changes to your branch
+     `git push origin suggestions_branch`
+6) Open a pull request for me to view your suggested changes:
+   - Navigate to the original repository on github
+   - click the "Pull Requests" button
+   - Click the "New pull request" button
+   - Select your feature branch (suggestions_branch in this case)
+   - Provide a detailed description of your changes.
+   - Submit the pull request and add me as a reviewer.
+  
+## Contribution Guidelines
+- Ensure your code is well-documented and follows the project's coding standards.
+- Write clear, concise commit messages.
+- Ensure all tests pass before submitting a pull request.
+- Provide a detailed description of your changes in the pull request.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Reporting issues
+If you encounter any issues with the project or have suggestions for improvements, please open an issue on GitHub:
 
-### `npm run eject`
+- Navigate to the Issues tab in the repository.
+- Click the "New issue" button.
+- Provide a detailed description of the issue or suggestion.
+- Submit the issue.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Thank you for using Agriculture For Youth! Together, we can create more job opportunities for the youth in the agricultural sector.
+If you have any questions or need further assistance, feel free to open an issue or contact us.
+ 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
